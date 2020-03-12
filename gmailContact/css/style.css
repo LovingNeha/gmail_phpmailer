@@ -1,0 +1,725 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    /* background-color: black; */
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(../img/800013069.jpg); */
+    background-image: url(../img/cat.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.header_menu {
+    width: 100%;
+    /* height: 100px; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
+    /*border: 1px solid blue; */
+}
+
+
+/* 
+#iconbar {
+    color: pink;
+    font-size: 2rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+} */
+
+
+/* #iconbar:hover {
+    color: palevioletred;
+} */
+
+
+/* .logo {
+    width: 20%;
+    text-align: center;
+    float: left;
+    size: 100%;
+} */
+
+.menu-list {
+    width: 100%;
+    text-align: right;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    background-color: gray;
+    font-size: 20px;
+    display: none;
+    color: white;
+}
+
+
+/* .menu-list {
+    width: 80%;
+    text-align: right;
+    padding-right: 50px;
+    list-style: none;
+} */
+
+ul {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: white;
+}
+
+.header-container {
+    text-transform: uppercase;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+.header-container h2 {
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 50px;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .3em;
+}
+
+.header-container h1 {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: .2em;
+}
+
+.header-container button {
+    height: 40px;
+    width: 150px;
+    letter-spacing: .3em;
+    padding: 8px 37px;
+    font-size: 12px;
+    background-color: transparent;
+    margin-right: 20px;
+}
+
+.header-container button a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-container button a:hover {
+    color: white;
+}
+
+.header-container button:hover {
+    border: 1px solid white;
+    background-color: gray;
+}
+
+
+/* #user {
+    border-radius: 50%;
+    border-color: red;
+}
+
+h4 {
+    color: red;
+} */
+
+.btncontact {
+    margin-top: 10px;
+    width: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background-color: transparent;
+}
+
+.btncontact:hover {
+    border: 1px solid white;
+    background-color: gray;
+}
+
+p {
+    color: white;
+    text-transform: initial;
+    text-align: justify;
+    padding: 0px 30px 10px 30px;
+    line-height: 20px;
+}
+
+.contact {
+    width: 500px;
+    height: 250px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    text-align: center;
+    border: 1px solid gray;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.contact h4 {
+    margin-top: 10px;
+    color: gray;
+}
+
+.contact h5 {
+    margin-top: 30px;
+}
+
+.contact .textboxdesign {
+    margin-top: 20px;
+    width: 200px;
+    /* display: block; */
+    /* margin-left: 26%;
+    margin-right: 25%; */
+}
+
+
+/*################### MEDIA QUERY ########################*/
+
+
+/*BIG LANDSCAPE TABLTES LAPTOPS DESKTOP */
+
+@media(min-width:1200px) {}
+
+
+/*tablet landscape low resolution laptop dektop */
+
+@media(max-width:990px) {
+    .logo {
+        width: 100%;
+        align-items: center;
+    }
+    header {
+        width: 100%;
+        background-size: cover;
+        /* background-repeat: repeat-y; */
+    }
+    .menu-list {
+        width: 100%;
+    }
+    .menu-list ul {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #iconbar {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive {
+        width: 100%!important;
+        height: 80vh!important;
+        background-color: black;
+        position: absolute;
+        z-index: 11111;
+    }
+    .menu-list.responsive ul {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive ul li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-container h1 {
+        margin-bottom: 30px;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: .1em;
+    }
+}
+
+
+/*portrait tablet e-reader kindle */
+
+@media(max-width:860px) {
+    .logo {
+        width: 100%;
+        align-items: center;
+    }
+    header {
+        width: 100%;
+        background-size: cover;
+        /* background-repeat: repeat-y; */
+    }
+    .menu-list {
+        width: 100%;
+        text-align: center;
+    }
+    ul li a {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    .menu-list ul {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #iconbar {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive {
+        width: 100%!important;
+        height: 80vh!important;
+        position: absolute;
+        z-index: 11111;
+    }
+    .menu-list.responsive ul {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive ul li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-container {
+        text-transform: uppercase;
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .header-container h1 {
+        margin-bottom: 50px;
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: .1em;
+        color: white;
+    }
+    .header-container h2 {
+        margin-top: 10px;
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 200;
+        letter-spacing: .3em;
+    }
+    .contact {
+        width: 400px;
+        height: 280px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 1px solid gray;
+        background-color: black;
+        opacity: 0.7;
+    }
+    .contact h4 {
+        margin-top: 10px;
+        color: gray;
+    }
+    .contact h5 {
+        margin-top: 40px;
+    }
+    .contact .textboxdesign {
+        margin-top: 20px;
+        width: 200px;
+        /* display: block; */
+        /* margin-left: 26%;
+    margin-right: 25%; */
+    }
+}
+
+
+/*smart phone iphone*/
+
+@media(max-width:600px) {
+    /* .logo {
+        width: 100%;
+    } */
+    header {
+        width: 100%;
+        background-size: cover;
+        /* background-repeat: repeat-y; */
+    }
+    .menu-list {
+        display: block;
+    }
+    /* .menu-list {
+        width: 100%;
+        text-align: center;
+    } */
+    /* .menu-list ul {
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    #iconbar {
+        opacity: 1;
+        visibility: visible;
+    } */
+    ul {
+        width: 100%;
+        display: none;
+        background-color: gray;
+        /* background-color: red; */
+        /* opacity: 0.7; */
+        /* visibility: hidden; */
+    }
+    ul li {
+        display: block;
+        padding-top: 10px;
+        font-size: 10px;
+        padding-left: 45%;
+        text-align: justify;
+        border: 1px solid white;
+        border-radius: 10%;
+        background-color: black;
+    }
+    .active {
+        display: block;
+    }
+    /* .menu-list.responsive {
+        width: 100%!important;
+        height: 80vh!important;
+        position: absolute;
+        z-index: 11111;
+    }
+    .menu-list.responsive ul {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive ul li {
+        float: none;
+        display: block;
+        text-align: center;
+    } */
+    .header-container {
+        text-transform: uppercase;
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        /* transform: translate(-50%, -50%); */
+        text-align: center;
+    }
+    .header-container h1 {
+        margin-bottom: 30px;
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: .1em;
+    }
+    .header-container button a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: normal;
+        font-size: 10px;
+    }
+    .header-container button {
+        height: 45px;
+        width: 200px;
+        letter-spacing: .3em;
+        padding: 8px 37px;
+        font-size: 12px;
+        background-color: transparent;
+        margin-right: 20px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .contact {
+        width: 500px;
+        height: 250px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 1px solid gray;
+        background-color: black;
+        opacity: 0.7;
+    }
+    .contact h4 {
+        margin-top: 10px;
+        color: gray;
+    }
+    .contact h5 {
+        margin-top: 40px;
+    }
+    .contact .textboxdesign {
+        margin-top: 20px;
+        width: 230px;
+        /* display: block; */
+        /* margin-left: 26%;
+        margin-right: 25%; */
+    }
+}
+
+
+/*smartphone portrait iphone portrait */
+
+@media(max-width:500px) {
+    header {
+        width: 100%;
+        background-size: cover;
+        /* background-repeat: repeat-y; */
+    }
+    .logo {
+        width: 100%;
+    }
+    .menu-list {
+        width: 100%;
+        text-align: center;
+    }
+    .menu-list ul {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #iconbar {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive {
+        width: 100%!important;
+        height: 80vh!important;
+        position: absolute;
+        z-index: 11111;
+    }
+    .menu-list.responsive ul {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive ul li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-container {
+        text-transform: uppercase;
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        top: 68%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .header-container h2 {
+        color: white;
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: .3em;
+    }
+    .header-container h1 {
+        margin-bottom: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 45px;
+        font-weight: normal;
+        letter-spacing: .0em;
+        color: white;
+    }
+    .header-container button a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: normal;
+        font-size: 10px;
+    }
+    .header-container button {
+        height: 45px;
+        width: 200px;
+        letter-spacing: .3em;
+        padding: 8px 37px;
+        font-size: 12px;
+        background-color: transparent;
+        margin-right: 20px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .contact {
+        width: 300px;
+        height: 300px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 1px solid gray;
+        background-color: black;
+        opacity: 0.7;
+    }
+    .contact h4 {
+        margin-top: 10px;
+        color: gray;
+    }
+    .contact h5 {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:340px) {
+    header {
+        width: 100%;
+        /* background-repeat: repeat-y; */
+    }
+    .logo {
+        width: 100%;
+    }
+    p {
+        color: white;
+    }
+    .menu-list {
+        width: 100%;
+        text-align: center;
+    }
+    .menu-list ul {
+        opacity: 0;
+        visibility: hidden;
+    }
+    #iconbar {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive {
+        width: 100%!important;
+        height: 80vh!important;
+        position: absolute;
+        z-index: 11111;
+    }
+    .menu-list.responsive ul {
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-list.responsive ul li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .header-container {
+        text-transform: uppercase;
+        width: 100%;
+        height: 550px;
+        position: absolute;
+        top: 66%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .header-container h1 {
+        margin-bottom: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 28px;
+        font-weight: 500;
+        letter-spacing: .0em;
+    }
+    .header-container h2 {
+        color: white;
+        margin-bottom: 50px;
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: .3em;
+    }
+    .header-container button {
+        height: 35px;
+        width: 150px;
+        letter-spacing: .3em;
+        padding: 8px 37px;
+        font-size: 12px;
+        background-color: transparent;
+        margin-right: 20px;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .header-container button a {
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: white;
+        font-weight: normal;
+        font-size: 10px;
+    }
+    .contact {
+        width: 290px;
+        height: 300px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        border: 1px solid gray;
+        background-color: black;
+        opacity: 0.7;
+    }
+    .contact h4 {
+        margin-top: 10px;
+        color: gray;
+    }
+    .contact h5 {
+        margin-top: 40px;
+    }
+    .contact .textboxdesign {
+        margin-top: 20px;
+        width: 150px;
+        /* display: block; */
+        /* margin-left: 26%;
+        margin-right: 25%; */
+    }
+}
